@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hybrid Fractal Viewer</title>
+    <style>
+        #canvasContainer {
+            display: flex;
+            gap: 20px;
+        }
+        canvas {
+            border: 2px solid black;
+        }
+    </style>
+    <script src="hybrid.js"></script>
+</head>
+<body>
+    <div>
+        <input name="arri" type="checkbox" onclick="radiochenged();" checked="true" />
+        <input name="arri" type="checkbox" onclick="radiochenged();" />
+        <input name="arri" type="checkbox" onclick="radiochenged();" />
+        <input name="arri" type="checkbox" onclick="radiochenged();" /><br /><br />
+
+        <select name="drawmode" onchange="changeDrawMode();"></select>
+        <select name="drawmode" onchange="changeDrawMode();"></select>
+        <select name="drawmode" onchange="changeDrawMode();"></select>
+        <select name="drawmode" onchange="changeDrawMode();"></select><br /><br />
+		
+		<div>
+			<label>
+				<input type="checkbox" onchange="toggleGreyMode(this)">
+				Slice mode
+			</label><br>
+			<input type="range" id="slicer" min="0" max="255" value="0" oninput="updateSlicer(this.value)">
+		</div>
+
+        <input type="button" value="Generate new fractal!" onclick="generateNewFractal()"><br /><br />
+        <div id="console-log0"></div><br />
+    </div>
+    <div id="canvasContainer">
+        <canvas id="monoCanvas" width="512" height="512"></canvas>
+        <canvas id="rgbCanvas" width="512" height="512"></canvas>
+        <canvas id="greyCanvas" width="512" height="512"></canvas>
+    </div>
+    <script>
+        window.onload = () => {
+            const selects = document.getElementsByName("drawmode");
+            for (let s of selects) {
+                for (let i = 0; i < 16; i++) {
+                    const opt = document.createElement("option");
+                    opt.value = i;
+                    opt.text = i;
+                    s.add(opt);
+                }
+            }
+            init();
+        };
+    </script>
+</body>
+</html>
