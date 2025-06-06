@@ -355,7 +355,7 @@ Explore more with [script](https://xcont.com/perfectshuffle/hybrid.html) ([shuff
 Here are the "card tricks" we got. I think we can stop here for now (you can shuffle three-dimensional matrices, but that's another time), (if any of the grasshoppers want to look at shuffling three-dimensional matrices - [script](https://xcont.com/perfectshuffle/fractal_3d_2.html) ([shuffle1d.html](https://github.com/xcontcom/perfect-shuffle/blob/main/fractal_3d_2.html) in the repository)).
 
 ### Melody Generation
-I experimented with a melody generator using a genetic algorithm. Each melody consists of note genes. Random shuffling produces cacophony, but Perfect Shuffle creates intriguing melodies. (Repository link to be added.)
+I experimented with a [melody generator using a genetic algorithm](https://github.com/xcontcom/perfect-shuffle-music). Each melody consists of note genes. Random shuffling produces cacophony, but Perfect Shuffle creates intriguing melodies.
 
 ---
 
