@@ -1,8 +1,8 @@
 # 🧠 Perfect Shuffle Fractals
 
-[Original Article](https://habr.com/en/articles/340964/) (Russian language)
+**[Translated Article](https://github.com/xcontcom/perfect-shuffle/blob/main/docs/article.md) (Engilsh)**
 
-[Translated Article](https://github.com/xcontcom/perfect-shuffle/blob/main/docs/article.md) (Engilsh)
+[Original Article](https://habr.com/en/articles/340964/) (Russian language)
 
 [Live demo](https://xcont.com/perfectshuffle/hybrid.html)
 
