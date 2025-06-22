@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>3D Perfect Shuffle Fractal with z-slicer</title>
+	<style>
+		body {
+			background-color: #111;
+			color: #eee;
+			font-family: monospace;
+			padding: 20px;
+		}
+		#console-log0 {
+			font-size: 16px;
+			margin: 10px 0;
+			padding: 4px;
+			border: 1px solid #444;
+			background-color: #222;
+			color: #8f8;
+			white-space: pre-wrap;
+		}
+		#controls {
+			margin-bottom: 20px;
+		}
+		#myCanvas {
+			image-rendering: pixelated;
+			border: 1px solid #999;
+			display: block;
+		}
+		input[type="range"] {
+			width: 512px;
+			margin: 0;
+		}
+	</style>
+	<script src="fractal_3d_with_rotaions.js"></script>
+</head>
+<body>
+	<h2>3D Perfect Shuffle Fractal with z-slicer</h2>
+
+	<div id="controls">
+		<label for="slicer">Slice (Z-axis):</label>
+		<input type="range" id="slicer" min="0" max="128" value="0" oninput="updateSlicer(this.value)">
+		<span id="slicer-value">0</span>
+		<br><br>
+		<button onclick="init()">🔁 Generate New Fractal</button>
+	</div>
+
+	<div id="rule-selectors">
+		<h3>Transformation Modes for Each Subcube (drawar[z][y][x])</h3>
+		<table style="border-collapse: collapse; color: #ccc;">
+			<tbody>
+				<script>
+					// Generate 2×2×2 table of selectors
+					for (let z = 0; z < 2; z++) {
+						document.write('<tr>');
+						for (let y = 0; y < 2; y++) {
+							for (let x = 0; x < 2; x++) {
+								let id = `r-${z}${y}${x}`;
+								document.write('<td style="padding: 4px;">');
+								document.write(`<label for="${id}">[${z}][${y}][${x}]</label><br>`);
+								document.write(`<select id="${id}" onchange="updateDrawar()">`);
+								for (let i = 0; i < 255; i++) {
+									document.write(`<option value="${i}">${i}</option>`);
+								}
+								document.write('</select>');
+								document.write('</td>');
+							}
+						}
+						document.write('</tr>');
+					}
+				</script>
+			</tbody>
+		</table>
+		<br>
+		<button onclick="randomizeDrawar()">🎲 Randomize All</button>
+	</div>
+
+	<div id="console-log0"></div>
+
+	<canvas id="myCanvas"></canvas>
+
+	<br><br>
+	<b><a href="https://github.com/xcontcom/perfect-shuffle" style="color:#888;">https://github.com/xcontcom/perfect-shuffle</a></b>
+
+	<script>
+		init();
+	</script>
+</body>
+</html>
