@@ -8,6 +8,8 @@
 
 [Live demo 3D](https://xcont.com/perfectshuffle/fractal_3d_2.html)
 
+[Live demo 3D (with rotations)](https://xcont.com/perfectshuffle/fractal_3d_with_rotaions.html)
+
 These aren't your average fractals.
 
 What you see here is the result of a brutally simple idea:
