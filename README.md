@@ -1,5 +1,7 @@
 # 🧠 Perfect Shuffle Fractals
 
+![Picture](docs/images/1.12.12.5.png)
+
 **[Translated Article](https://github.com/xcontcom/perfect-shuffle/blob/main/docs/article.md) (Engilsh)**
 
 [Original Article](https://habr.com/en/articles/340964/) (Russian language)
