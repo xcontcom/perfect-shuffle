@@ -157,36 +157,6 @@ function drawRGB(array) {
 	}
 }
 
-/*
-function drawGrey(array) {
-	const canvas = document.getElementById('greyCanvas');
-	const ctx = canvas.getContext('2d');
-	const size = array.length;
-	canvas.width = canvas.height = size;
-
-	// Step 1: Find min and max
-	let min = Infinity, max = -Infinity;
-	for (let x = 0; x < size; x++) {
-		for (let y = 0; y < size; y++) {
-			const v = array[x][y];
-			if (v < min) min = v;
-			if (v > max) max = v;
-		}
-	}
-	const range = max - min || 1; // avoid div by 0
-
-	// Step 2: Normalize and draw
-	for (let x = 0; x < size; x++) {
-		for (let y = 0; y < size; y++) {
-			const val = array[x][y];
-			const norm = Math.floor(((val - min) / range) * 255);
-			ctx.fillStyle = `rgb(${norm},${norm},${norm})`;
-			ctx.fillRect(x, y, 1, 1);
-		}
-	}
-}
-*/
-
 let greyMode = 'grayscale'; // or 'slice'
 let slicerThreshold = 0;
 
