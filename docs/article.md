@@ -1,5 +1,7 @@
 # The Perfect Shuffle
 
+[Repository](https://github.com/xcontcom/perfect-shuffle)
+
 This article is a translation and adaptation of my 2017 piece, originally published in Russian on Habr: [Perfect shuffle](https://habr.com/en/articles/340964/)
 
 ![picture](images/1.png)
@@ -399,3 +401,13 @@ I experimented with a [melody generator using a genetic algorithm](https://githu
 ```
 "No cats were shuffled in the making of this fractal. Any resemblance to space chicks is purely coincidental."
 ```
+
+## About the Author
+Serhii Herasymov  
+*Programmer & Math Enthusiast* (Ukraine → Ireland)  
+
+Email: sergeygerasimofff@gmail.com  
+GitHub: [xcontcom](https://github.com/xcontcom)  
+X (Twitter): [@xcontcom](https://x.com/xcontcom)  
+
+Feedback welcome.
